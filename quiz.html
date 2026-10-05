@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ultimate Quiz</title>
+
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <main class="quiz-page">
+
+        <!-- ================= HEADER ================= -->
+        <header class="quiz-header">
+
+            <div class="header-left">
+
+                <div class="topic-badge">
+                    ULTIMATE QUIZ
+                </div>
+
+                <h1 id="subjectName">
+                    Physics
+                </h1>
+
+                <p id="setName">
+                    Set 01
+                </p>
+
+            </div>
+
+
+            <div class="score-card">
+
+                <span class="score-label">
+                    SCORE
+                </span>
+
+                <strong id="score">
+                    0
+                </strong>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PROGRESS ================= -->
+        <section class="progress-card">
+
+            <div class="progress-top">
+
+                <span id="questionNumber">
+                    Question 1 / 10
+                </span>
+
+                <span id="progressPercent">
+                    10%
+                </span>
+
+            </div>
+
+
+            <div class="progress-track">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUESTION ================= -->
+        <section class="question-card">
+
+            <div class="question-label">
+                QUESTION
+            </div>
+
+            <div id="question">
+                Loading question...
+            </div>
+
+        </section>
+
+
+        <!-- ================= OPTIONS ================= -->
+        <section class="options-container">
+
+            <button
+                class="option"
+                id="option1">
+            </button>
+
+            <button
+                class="option"
+                id="option2">
+            </button>
+
+            <button
+                class="option"
+                id="option3">
+            </button>
+
+            <button
+                class="option"
+                id="option4">
+            </button>
+
+        </section>
+
+
+        <!-- ================= ACTION BUTTONS ================= -->
+        <section class="action-buttons">
+
+            <button
+                id="previousBtn"
+                class="secondary-btn">
+                PREVIOUS
+            </button>
+
+            <button
+                id="skipBtn"
+                class="secondary-btn">
+                SKIP
+            </button>
+
+            <button
+                id="showAnswerBtn"
+                class="answer-btn">
+                SHOW ANSWER
+            </button>
+
+            <button
+                id="nextBtn"
+                class="next-btn">
+                NEXT
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         QUESTION BANK FILES
+         ALL QUESTION FILES MUST BE LOADED BEFORE quiz.js
+         ===================================================== -->
+
+    <!-- SCIENCE -->
+    <script src="questions_physics.js"></script>
+    <script src="questions_chemistry.js"></script>
+    <script src="questions_biology.js"></script>
+
+
+    <!-- SOCIAL SCIENCE -->
+    <script src="questions_geography.js"></script>
+    <script src="questions_history.js"></script>
+    <script src="questions_political_science.js"></script>
+    <script src="questions_economics.js"></script>
+    <script src="questions_sociology.js"></script>
+
+
+    <!-- MATHEMATICS -->
+    <script src="questions_mathematics.js"></script>
+
+
+    <!-- G.K. / G.S. -->
+    <script src="questions_gk_gs.js"></script>
+
+
+    <!-- LANGUAGES -->
+    <script src="questions_hindi.js"></script>
+    <script src="questions_english.js"></script>
+    <script src="questions_sanskrit.js"></script>
+
+
+    <!-- =====================================================
+         QUIZ ENGINE
+         IMPORTANT:
+         quiz.js MUST COME AFTER ALL QUESTION FILES
+         ===================================================== -->
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
