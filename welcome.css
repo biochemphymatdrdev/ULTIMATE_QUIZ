@@ -1,0 +1,155 @@
+/* ===========================
+   ULTIMATE QUIZ WAR
+   Welcome Page
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#081b29;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    color:white;
+
+}
+body {
+    background-image: url("welcome_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+
+    width:90%;
+
+    max-width:500px;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.10);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+h3{
+
+    font-size:22px;
+
+    letter-spacing:4px;
+
+    margin-bottom:15px;
+
+}
+
+h1{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+.quote{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+}
+
+.author{
+
+    color:gold;
+
+    margin-bottom:35px;
+
+    font-weight:bold;
+
+}
+
+#startBtn{
+
+    padding:16px 45px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ff9800;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#startBtn:hover{
+
+    transform:scale(1.05);
+
+    background:#ff7b00;
+
+}
+
+#startBtn:active{
+
+    transform:scale(.97);
+
+}
+button{
+    margin-top:30px;
+    padding:18px 45px;
+
+    background:linear-gradient(135deg,#ff9800,#ff6f00);
+
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+
+    border:none;
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 20px rgba(255,152,0,.45);
+}
+
+button:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 15px 30px rgba(255,152,0,.6);
+}
+
+button:active{
+    transform:scale(.97);
+}
