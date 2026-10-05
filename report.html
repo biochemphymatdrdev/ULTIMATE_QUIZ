@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Report</title>
+
+    <link rel="stylesheet" href="report.css">
+
+</head>
+
+<body>
+
+<div class="report-container">
+
+    <div class="report-header">
+
+        <div class="trophy">
+            🏆
+        </div>
+
+        <h1>QUIZ COMPLETE!</h1>
+
+        <p id="subjectInfo">
+            SUBJECT • SET 01
+        </p>
+
+    </div>
+
+
+    <div class="percentage-card">
+
+        <div class="percentage-circle">
+
+            <span id="percentage">
+                0%
+            </span>
+
+        </div>
+
+        <h2 id="performanceEmoji">
+            🎯
+        </h2>
+
+        <p id="message">
+            Keep learning and keep improving!
+        </p>
+
+    </div>
+
+
+    <div class="stats">
+
+        <div class="stat correct">
+
+            <span class="stat-icon">
+                ✓
+            </span>
+
+            <span class="stat-number"
+                  id="correct">
+                0
+            </span>
+
+            <span class="stat-label">
+                CORRECT
+            </span>
+
+        </div>
+
+
+        <div class="stat wrong">
+
+            <span class="stat-icon">
+                ✕
+            </span>
+
+            <span class="stat-number"
+                  id="wrong">
+                0
+            </span>
+
+            <span class="stat-label">
+                WRONG
+            </span>
+
+        </div>
+
+
+        <div class="stat skipped">
+
+            <span class="stat-icon">
+                —
+            </span>
+
+            <span class="stat-number"
+                  id="skipped">
+                0
+            </span>
+
+            <span class="stat-label">
+                SKIPPED
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="score-card">
+
+        <span>
+            TOTAL SCORE
+        </span>
+
+        <strong id="score">
+            0 / 10
+        </strong>
+
+    </div>
+
+
+    <div class="report-buttons">
+
+        <button id="retakeBtn">
+            🔄 RETAKE SET
+        </button>
+
+        <button id="setsBtn">
+            📚 BACK TO SETS
+        </button>
+
+        <button id="topicsBtn">
+            🏠 BACK TO TOPICS
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="report.js"></script>
+
+</body>
+
+</html>
