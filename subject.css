@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url("welcome_background.png") center/cover fixed no-repeat;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Dark background layer */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 12, 25, 0.48);
+    z-index: -1;
+}
+
+/* Main container */
+.container {
+    width: 92%;
+    max-width: 650px;
+    margin: 70px auto 30px;
+    padding: 28px 20px 30px;
+    border-radius: 30px;
+    background: rgba(8, 25, 43, 0.78);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
+}
+
+/* Page heading */
+#pageTitle {
+    text-align: center;
+    font-size: clamp(28px, 8vw, 46px);
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Subject cards */
+#subjectList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Individual subject button */
+.subject-button {
+    width: 100%;
+    min-height: 68px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.07)
+    );
+
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.18s ease,
+                background 0.18s ease,
+                box-shadow 0.18s ease;
+}
+
+/* Touch feedback */
+.subject-button:active {
+    transform: scale(0.96);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+/* Back button */
+.back-button {
+    width: 100%;
+    min-height: 62px;
+    margin-top: 28px;
+
+    border: none;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.16);
+    color: white;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: transform 0.18s ease,
+                background 0.18s ease;
+}
+
+.back-button:active {
+    transform: scale(0.96);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+/* Small screens */
+@media (max-width: 400px) {
+
+    .container {
+        width: 94%;
+        padding: 24px 16px 26px;
+    }
+
+    .subject-button {
+        font-size: 19px;
+        min-height: 62px;
+    }
+
+    .back-button {
+        font-size: 18px;
+    }
+}
